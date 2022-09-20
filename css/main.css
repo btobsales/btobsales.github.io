@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@400;700;900&display=swap');
 
 *,
 ::after,
@@ -283,13 +282,14 @@ h1 {
     margin-top: 2em;
     /* background: #eee; */
     border-bottom: solid .3em #000;
-    /* padding: 20px; */
+    padding-bottom: 10px;
   }
-  
+
 h2 {
     font-size: 1.4em;
     margin-top: 1.4em;
     border-bottom: solid .15em #000;
+    padding-bottom: 5px;
 }
 
 h3 {
@@ -394,7 +394,7 @@ a:hover {
     margin: 0;
     list-style-type: none;
   }
-  
+
 .edelweiss {
     /* background: url('img/edelweiss_black.png') no-repeat left top; */
     list-style-image: url(/img/edelweiss_black.png);
@@ -403,18 +403,18 @@ a:hover {
     /* padding-top: 7px;
     padding-left: 44px; */
 
-    /* position: absolute; 
-    inset: 0px; 
-    box-sizing: border-box; 
-    padding: 0px; 
-    border: none; 
-    margin: auto; 
-    display: block; 
-    min-width: 100%; 
-    max-width: 100%; 
-    min-height: 100%; 
-    max-height: 100%; 
-    object-fit: contain; 
+    /* position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: contain;
     object-position: center center; */
 }
 
@@ -453,7 +453,8 @@ h2 .notion-page__icon div {
 
 .reco_card {
     padding: 50px;
-    border: solid 2em #eee;
+    border-left: solid 1em #eee;
+    border-top: solid 1em;
 }
 
 .reco_title {
@@ -499,3 +500,75 @@ h2 .notion-page__icon div {
     vertical-align: top;
     width: 100px;
 }
+
+/* 220920 */
+
+/* MY LINKS / BOOKMARKS */
+
+.link_border {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    /*Borders*/
+
+    border-left: 8px solid black;
+
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #000;
+
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #000;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+
+    padding: 0.5rem;
+
+    height: 100%;
+    display: flex;
+    order: 2;
+    width: 100%;
+}
+
+    .link_logo_box {
+        position: relative;
+        float: left;
+        width: 5%;
+        margin: auto;
+        order: 1;
+    }
+
+    .link_logo {
+        margin: auto;
+        display: block;
+    }
+
+    .link_content {
+        position: relative;
+        float: right;
+        width: 95%;
+        margin: auto;
+        order: 2;
+    }
+
+        .link_title {
+            font-weight: bold;
+            margin-left: 0.8em;
+            font-size: 1.1em;
+            /* Lato Black = weight 900 */
+            font-weight: 900;
+        }
+
+        .link_tagline {
+            font-size: 0.9em;
+            margin-left: 0.8em;
+            font-weight: 700;
+        }
+
+        .link_url {
+            font-size: 0.8em;
+            margin-left: 0.8em;
+        }
