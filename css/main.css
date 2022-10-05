@@ -646,11 +646,14 @@ td {
 
 th {
     line-height: 2rem;
+    vertical-align: bottom;
+    background-color: #fff;    
 }
 
 .rec_table_header_subtitle {
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
     font-weight: 300;
+    line-height: 0.5rem;
 }
 
 .rec_table {
@@ -665,6 +668,7 @@ th {
 .col_cv {
     padding-left: 1rem;
     padding-right: 1rem;
+    align-content: middle;
 }
 
 .col_socials {
