@@ -7,9 +7,9 @@
 }
 
 html {
-  color: #222;
-  /* font-size: 1em; */
-  /* line-height: 1.4; */
+    color: #222;
+    /* font-size: 1em; */
+    /* line-height: 1.4; */
 }
 
 .content {
@@ -21,13 +21,13 @@ html {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #da2222;
-  text-shadow: none;
+    background: #da2222;
+    text-shadow: none;
 }
 
 /*
@@ -42,7 +42,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /*
@@ -50,9 +50,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -60,13 +60,13 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 
 /*
  * Hide visually and from screen readers
@@ -74,7 +74,7 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
 
 /*
@@ -87,16 +87,16 @@ textarea {
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
 
 /*
@@ -107,13 +107,13 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
 
 /*
@@ -121,7 +121,7 @@ textarea {
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -138,116 +138,114 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+    Print styles.
+    Inlined to avoid the additional HTTP request:
+    https://www.phpied.com/delay-loading-your-print-css/
+    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
+    *,
+    *::before,
+    *::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
-  }
+    }
 
-  a,
-  a:visited {
+    a,
+    a:visited {
     text-decoration: underline;
-  }
+    }
 
-  a[href]::after {
+    a[href]::after {
     content: " (" attr(href) ")";
-  }
+    }
 
-  abbr[title]::after {
+    abbr[title]::after {
     content: " (" attr(title) ")";
-  }
+    }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+    /*
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
     content: "";
-  }
+    }
 
-  pre {
+    pre {
     white-space: pre-wrap !important;
-  }
+    }
 
-  pre,
-  blockquote {
+    pre,
+    blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
-  }
+    }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
+    /*
+    * Printing Tables:
+    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
+    thead {
     display: table-header-group;
-  }
+    }
 
-  tr,
-  img {
+    tr,
+    img {
     page-break-inside: avoid;
-  }
+    }
 
-  p,
-  h2,
-  h3 {
+    p,
+    h2,
+    h3 {
     orphans: 3;
     widows: 3;
-  }
+    }
 
-  h2,
-  h3 {
+    h2,
+    h3 {
     page-break-after: avoid;
-  }
+    }
 }
 
 /* ==========================================================================
-   My custom styles
-   ========================================================================== */
-
-
+My custom styles
+========================================================================== */
 
 /* @font-face {
     font-family: 'Lato';
     src: url('GraublauWeb.eot?') format('eot'), url('GraublauWeb.woff') format('woff'), url('GraublauWeb.ttf') format('truetype');
-  } */
+    } */
 
 body {
     margin-top: 100px;
@@ -258,7 +256,7 @@ body {
 
 .header {
     width: 800px;
-  }
+    }
 
 strong {
     font-weight: 600
@@ -284,7 +282,7 @@ h1 {
     /* background: #eee; */
     border-bottom: solid .3em #000;
     padding-bottom: 10px;
-  }
+    }
 
 h2 {
     font-size: 1.4em;
@@ -344,7 +342,7 @@ a:hover {
     border-collapse: collapse;
     /* padding: 0 100px 0 0; */
     margin: 0;
-  }
+    }
 
 .service table img {
     width: 10px;
@@ -394,7 +392,7 @@ a:hover {
     padding: 0;
     margin: 0;
     list-style-type: none;
-  }
+    }
 
 .edelweiss {
     /* background: url('img/edelweiss_black.png') no-repeat left top; */
@@ -535,41 +533,113 @@ h2 .notion-page__icon div {
 }
 
     .link_logo_box {
-        position: relative;
-        float: left;
-        width: 5%;
-        margin: auto;
-        order: 1;
+    position: relative;
+    float: left;
+    width: 5%;
+    margin: auto;
+    order: 1;
     }
 
     .link_logo {
-        margin: auto;
-        display: block;
+    margin: auto;
+    display: block;
     }
 
     .link_content {
-        position: relative;
-        float: right;
-        width: 95%;
-        margin: auto;
-        order: 2;
+    position: relative;
+    float: right;
+    width: 95%;
+    margin: auto;
+    order: 2;
     }
 
-        .link_title {
-            font-weight: bold;
-            margin-left: 0.8em;
-            font-size: 1.1em;
-            /* Lato Black = weight 900 */
-            font-weight: 900;
-        }
+    .link_title {
+    font-weight: bold;
+    margin-left: 0.8em;
+    font-size: 1.1em;
+    /* Lato Black = weight 900 */
+    font-weight: 900;
+    }
 
-        .link_tagline {
-            font-size: 0.9em;
-            margin-left: 0.8em;
-            font-weight: 700;
-        }
+    .link_tagline {
+    font-size: 0.9em;
+    margin-left: 0.8em;
+    font-weight: 700;
+    }
 
-        .link_url {
-            font-size: 0.8em;
-            margin-left: 0.8em;
-        }
+    .link_url {
+    font-size: 0.8em;
+    margin-left: 0.8em;
+    }
+
+/* table {
+    display: block;
+} */
+
+/* th {
+    display: block;
+} */
+
+/* tr {
+    display: block;
+} */
+
+/* td {
+    display: block;
+} */
+
+.link_add {
+    font-size: 1.1rem;
+    line-height: 4rem;
+}
+
+.rec_target {
+    font-size: 0.8em;
+    /* margin-left: 0.8em; */
+    font-weight: 300;
+}
+
+tbody tr:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+tbody tr:nth-child(odd){
+    background-color: #eee;
+}
+
+td {
+    padding: 0.3rem;
+}
+
+th {
+    line-height: 2rem;
+}
+
+.rec_table {
+    border-collapse: collapse;
+}
+
+.col_name {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.col_cv {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col_socials {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col_country {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col_founded {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
