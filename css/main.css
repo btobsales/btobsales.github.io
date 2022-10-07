@@ -318,7 +318,9 @@ h1 {
     }
 
 h2 {
-    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
     margin-top: 1.4em;
     border-bottom: solid .15em #000;
     padding-bottom: 5px;
@@ -349,7 +351,6 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
     line-height: 1.1;
     margin-bottom: .8em;
     font-family: 'Roboto', sans-serif;
@@ -486,7 +487,9 @@ h2 .notion-page__icon div {
 .reco_card {
     padding: 50px;
     border-left: solid 1em #eee;
-    border-top: solid 1em;
+    border-top: solid 0.8em;
+    border-right: solid 1em #fff;
+    border-bottom: solid 1em #fff;
 }
 
 .reco_title {
@@ -689,6 +692,10 @@ th {
 
 .contact_block {
     margin-bottom: 2rem;
+}
+
+.nic_blurb {
+    padding: 1rem;
 }
 
 
