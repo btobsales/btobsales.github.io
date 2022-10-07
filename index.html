@@ -47,6 +47,15 @@
 
     <!-- <meta name="theme-color" content="#fafafa"> -->
 
+    <!-- Email -->
+    <style type="text/css">
+        .e-mail:before {
+            content: attr(data-website) "\0040" attr(data-user);
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -659,10 +668,19 @@
 
         <h2>Contact me</h2>
 
-        <a href="https://www.linkedin.com/in/ndeville/" target="_blank">Linkedin</a>
+        <div class="contact_block">
 
-        <br>
-        <br>
+            <p>Email me at <span class="e-mail" data-user="cin" data-website="ue.selasbotb"></span> or:</p>
+
+            <form action="https://www.linkedin.com/in/ndeville/" method="get" target="_blank">
+                <button type="submit" class="button_black">Linkedin</button>
+            </form>
+
+            <form action="https://cal.com/ndeville" method="get" target="_blank">
+                <button type="submit" class="button_black">Book a call</button>
+            </form>
+
+        </div>
 
         <div class="footer">
 
