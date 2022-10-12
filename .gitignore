@@ -12,6 +12,7 @@ dist
 
 # Nic
 
+old/
 .DS_Store
 .bash_profile
 .cache/
