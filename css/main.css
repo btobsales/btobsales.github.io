@@ -1,23 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;700;900&display=swap');
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-html {
-    color: #222;
-    /* font-size: 1em; */
-    /* line-height: 1.4; */
-}
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
-.content {
-    /* clear: both; */
-    margin: auto;
-    /* margin: 50; */
-    /* padding: 50; */
-    max-width: 800px;
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+/* Global variables */
+:root {
+    /* --nic_red: #C64350; */
+    /* --nic_main: #000305;
+    --nic_red: #d9534f;
+    --nic_blue: #0275d8;
+    --nic_green: #5cb85c;
+    --nic_yellow: #f0ad4e; */
+    --nic_main: #1f1300;
+    --nic_red: #e84855;
+    --nic_yellow: #f9dc5c;
+    /* --nic_blue: #3185fcff; */
+    --nic_blue: #003399;
 }
 
 ::-moz-selection {
@@ -26,18 +34,20 @@ html {
 }
 
 ::selection {
-    background: #da2222;
+    background: #b3d4fc;
     text-shadow: none;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+html {
+    color: var(--nic_main);
+    font-size: 18px;
+}
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
-
+/* Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers: */
 audio,
 canvas,
 iframe,
@@ -67,203 +77,92 @@ textarea {
 
 
 /* ==========================================================================
-Helper classes
+Nic's custom styles
 ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
+/* Responsiveness */
 
-.hidden,
-[hidden] {
-    display: none !important;
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float: left;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;; float: left}
+    .col-4 {width: 33.33%; float: left}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-    clip: auto;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* img {
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-}
+} */
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-/* ==========================================================================
-    EXAMPLE Media Queries for Responsive Design.
-    These examples override the primary ('mobile first') styles.
-    Modify as content requires.
-    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-    Print styles.
-    Inlined to avoid the additional HTTP request:
-    https://www.phpied.com/delay-loading-your-print-css/
-    ========================================================================== */
-
-@media print {
-    *,
-    *::before,
-    *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-    text-decoration: underline;
-    }
-
-    a[href]::after {
-    content: " (" attr(href) ")";
-    }
-
-    abbr[title]::after {
-    content: " (" attr(title) ")";
-    }
-
-    /*
-    * Don't show links that are fragment identifiers,
-    * or use the `javascript:` pseudo protocol
-    */
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-    content: "";
-    }
-
-    pre {
-    white-space: pre-wrap !important;
-    }
-
-    pre,
-    blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-    }
-
-    /*
-    * Printing Tables:
-    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-    */
-    thead {
-    display: table-header-group;
-    }
-
-    tr,
-    img {
-    page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-    orphans: 3;
-    widows: 3;
-    }
-
-    h2,
-    h3 {
-    page-break-after: avoid;
-    }
-}
-
-/* ==========================================================================
-My custom styles
-========================================================================== */
-
-/* @font-face {
-    font-family: 'Lato';
-    src: url('GraublauWeb.eot?') format('eot'), url('GraublauWeb.woff') format('woff'), url('GraublauWeb.ttf') format('truetype');
-    } */
-
+/* Content */
 body {
-    /* margin-top: 100px; */
-    /* font-family: 'Lato', 'Helvetica Neue', sans-serif; */
-    font-family: 'Lato';
-    /* max-width: 800px; */
+    font-family: 'Lato', sans-serif;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    max-width: 800px;
+    margin: 0 auto !important; 
+	float: none !important;
 }
 
-.header {
-    width: 800px;
-    }
-
-strong {
-    font-weight: 600
+.content {
+    max-width: 100%;
 }
 
 /* Headings */
@@ -273,7 +172,28 @@ strong {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 0;
+    margin-top: 1rem;
+    align-items: center;
 }
+
+/* .header_title {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-right: 1rem;
+    margin-block-end: 0px;
+    text-decoration: none;
+    display: block;
+} */
+
+.header_image {
+    /* margin-top: 0.8rem; */
+    /* vertical-align: middle; */
+    display: block;
+    /* max-width: 108px; */
+    width: 350px;
+}
+
 
 .title_and_subtile {
     font-size: 0.8rem;
@@ -287,24 +207,6 @@ strong {
     font-weight: 600;
 }
 
-.header_title {
-    font-size: 3em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    margin-right: 1rem;
-    margin-block-end: 0px;
-    text-decoration: none;
-    display: block;
-    margin-block-start: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0.8rem;
-}
-
-.header_image {
-    margin-top: 0.8rem;
-    vertical-align: middle;
-}
-
 .subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
@@ -315,7 +217,7 @@ h1 {
     font-size: 2rem;
     margin-top: 2rem;
     /* background: #eee; */
-    border-bottom: solid .3em #000;
+    border-bottom: solid .3em var(--nic_blue);
     padding-bottom: 10px;
     }
 
@@ -324,7 +226,7 @@ h2 {
     font-weight: 900;
     font-size: 1.5em;
     margin-top: 1.4em;
-    border-bottom: solid .15em #000;
+    border-bottom: solid .15em var(--nic_blue);
     padding-bottom: 5px;
 }
 
@@ -339,7 +241,7 @@ h4 {
 }
 h4:before {
     content: '>>>> ';
-    color: #C64350;
+    color: var(--nic_blue);
 }
 
 h5 {
@@ -358,187 +260,141 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-/* h2, h3, h4, h5, h6 { margin-top: .8em; } */
-
 hr {
+    display: block;
+    height: 1px;
+    border: 0;
     border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 a {
-    color: #000;
+
 }
 
 a:hover {
-    color: #da2222;
+    color: var(--nic_blue);
+    color: #fff;
 }
 
+/* Services */
 
-.service_table {
-    /* vertical-align: baseline; */
-    border-collapse: collapse;
-    /* padding: 0 100px 0 0; */
-    margin: 0;
-    }
-
-.service table img {
-    width: 10px;
-    /* vertical-align: middle; */
-}
-
-.fitwidth {
-    /* width: auto; */
-    width: 30px;
-    padding: 0 10px 0 0;
-    white-space: nowrap;
-}
-
-.footer {
-    font-size: .8em;
-    color: #333;
-    line-height: 1rem;
-}
-
-
-.edelweiss_bullet {
-    /* white-space: nowrap; */
-    /* width: 16px; */
-    /* vertical-align: middle; */
-    list-style-image: url(/img/edelweiss_black.svg);
-
-}
-
-.custom-list li {
-    position: relative;
-    padding-left: 20px;
-}
-.edelweiss_list li:before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    background-image: url(/img/edelweiss_black.svg);
-    background-size: cover;
-    background-position: center;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.edelweiss_list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    }
-
-.edelweiss {
-    /* background: url('img/edelweiss_black.png') no-repeat left top; */
-    list-style-image: url(/img/edelweiss_black.png);
-    /* width: 16px; */
-    /* height: 1.5em; */
-    /* padding-top: 7px;
-    padding-left: 44px; */
-
-    /* position: absolute;
-    inset: 0px;
-    box-sizing: border-box;
-    padding: 0px;
-    border: none;
-    margin: auto;
-    display: block;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    object-position: center center; */
-}
-
-
-
-/* border-bottom: 1px solid var(--color-border-dark);
-overflow: hidden;
-text-overflow: ellipsis
-
-
-position: relative;
+.services_box {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 1.3em;
-    padding: 1.1px;
-    line-height: 1.2em;
-    margin-right: .3em */
-
-h2 .notion-page__icon div {
-    width: 1.5rem !important;
-    height: 1.5rem !important
+    /* justify-content: space-evenly; */
+    justify-content: center; 
+    /* align-items: center;  */
+    flex-wrap: wrap;
+    /* align-items: center; */
 }
 
-.edelweiss_list li
-{
-    display: list-item;
-    /* padding-left: 10px; */
-    background-image: url(/img/edelweiss_black.png);
-    background-repeat: no-repeat;
-    background-position: 0 .5em;
-    /* background-size: 16px; */
+.services {
+    float: left;
+    background-color: var(--nic_main);
+    color: #fff;
+    /* color: var(--nic_main); */
+    text-align: center;
+    width: 350px;
+    border: 1px solid #fff;
+    margin: 0;
+    text-decoration: none;
+    padding: 0.5rem;
 }
+.services:hover {
+    background-color: var(--nic_blue);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.services h2 {
+    border-bottom: none;
+}
+
+
 
 /* Recommendations */
 
+.star {
+    width: 1.5rem;
+    vertical-align: top;
+}
+
 .reco_card {
-    padding: 50px;
-    border-left: solid 1em #eee;
+    /* padding: 50px 0 0 50px; */
+    padding: 2.5rem;
+    /* border-left: solid 1em #eee; */
+    /* border-left: solid 1em var(--nic_blue);
     border-top: solid 0.8em;
     border-right: solid 1em #fff;
-    border-bottom: solid 1em #fff;
+    border-bottom: solid 1em #fff; */
+    border: solid 3px var(--nic_blue);
+    margin-bottom: 1rem;
+    box-shadow: 5px 10px var(--nic_blue);
 }
 
 .reco_title {
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     font-size: 1.5em;
     font-weight: 800;
 }
+.reco_title:before {
+    /* content: '“ '; */
+    content: open-quote;
+    color: var(--nic_blue);
+    vertical-align: top;
+}
 
 .reco_body {
-    border-bottom: solid 3px #eee;
+    border-bottom: solid 3px var(--nic_blue);
+    line-height: 1.4rem;
+}
+
+.reco_person {
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+.headshot_cell {
+    border-collapse: collapse;
+    width: 100px;
+    margin: 0.5rem 2rem 0 0;
+}
+
+.headshot {
+    vertical-align: top;
+    width: 100px;
+    border-radius: 50%;
 }
 
 .reco_name {
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    border-left: solid 3px #000;
-    /* border-top: solid 3px #000; */
+    border-left: solid 5px var(--nic_main);
+    /* border-top: solid 3px var(--nic_main) */
     padding: 5px;
+    margin: 0.5rem 0 0 0;
 }
-
 
 .reco_person_title {
     font-size: 0.9em;
+    margin: 0.5rem 0 0 0;
 }
 .reco_person_title:before {
     content: '>>> ';
-    color: #C64350;
+    /* content: open-quote; */
+    color: var(--nic_blue);
     vertical-align: top;
 }
 
 .reco_relationship {
     font-size: 0.9em;
     font-style: italic;
+    margin: 0.5rem 0 0 0;
 }
 
-.headshot_cell {
-    border-collapse: collapse;
-    width: 100px;
-}
 
-.headshot {
-    vertical-align: top;
-    width: 100px;
-}
-
-/* 220920 */
 
 /* MY LINKS / BOOKMARKS */
 
@@ -552,15 +408,15 @@ h2 .notion-page__icon div {
 
     border-top-style: solid;
     border-top-width: 1px;
-    border-top-color: #000;
+    border-top-color: var(--nic_main);
 
     border-right-style: solid;
     border-right-width: 1px;
-    border-right-color: #000;
+    border-right-color: var(--nic_main);
 
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #000;
+    border-bottom-color: var(--nic_main);
 
     padding: 0.5rem;
 
@@ -610,118 +466,113 @@ h2 .notion-page__icon div {
     margin-left: 0.8em;
     }
 
-/* table {
-    display: block;
-} */
+/* ABOUT ME */
 
-/* th {
-    display: block;
-} */
-
-/* tr {
-    display: block;
-} */
-
-/* td {
-    display: block;
-} */
-
-.link_add {
-    font-size: 1.1rem;
-    line-height: 4rem;
+.nic_blurb {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
 }
 
-.rec_target {
-    font-size: 0.8em;
-    /* margin-left: 0.8em; */
-    font-weight: 300;
-}
-
-.rec_table tbody tr:hover {
-    background-color: #bbb;
-    cursor: pointer;
-}
-.rec_table tbody tr:nth-child(odd){
-    background-color: #e8e8e8;
-}
-
-td {
-    padding: 0.3rem;
-}
-
-th {
-    line-height: 2rem;
-    vertical-align: bottom;
-    background-color: #fff;    
-}
-
-.rec_table_header_subtitle {
-    /* font-size: 0.5rem; */
-    font-weight: 300;
-    line-height: 0.5rem;
-}
-
-.rec_table {
-    border-collapse: collapse;
-}
-
-.col_name {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-}
-
-.col_cv {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    align-content: middle;
-}
-
-.col_socials {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    white-space: nowrap;
-}
-
-.col_country {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.col_founded {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+/* CONTACT ME */
 
 .contact_block {
     margin-bottom: 2rem;
+    margin: 1rem;
+    line-height: 2rem;
+    /* display: flex;
+    align-content: space-between; */
+    display: grid;
+    grid-template-columns: 150px 180px;
+    /* grid-template-rows: 30px 30px 30px; */
 }
 
-.nic_blurb {
-    padding: 1rem;
+.nic_headshot_container {
+    /* border-collapse: collapse; */
+    width: 150px;
+    /* margin: 0.5rem 2rem 0 0; */
+    /* grid-column: 1 / span 3; */
+    grid-row: 1 / span 3;
 }
 
+.nic_headshot {
+    vertical-align: top;
+    width: 130px;
+    border-radius: 50%;
+}
 
-/* BUTTONS */
+.email_block {
+    /* margin-bottom: 1rem; */
+    /* float: left; */
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 1rem;
+    border-left: solid 8px var(--nic_main);
+    margin-bottom: 0.5rem;
+    margin-top: 0px;
+}
 
-.button_black {
-    border: solid 3px #000;
-    background-color: #000;
-    width: 8rem;
-    color: white;
-    padding: 1rem 1rem;
-    text-align: center;
+.button_linkedin {
+    color: var(--nic_main);
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    grid-column: 2;
+    grid-row: 2;
+    border-left: solid 8px var(--nic_main);
+}
+.button_linkedin:hover {
+    background-color: var(--nic_blue);
+    fill: #fff;
+    color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
+.linkedin_svg {
+    width: 30px;
+    height: 30px;
+    fill: #0077b5;
+}
+.linkedin_svg:hover {
+    fill: var(--nic_yellow);
+}
 
-.button_black:hover {
-    color: #000;
-    background-color: #fff;
+.button_cal {
+    /* background-color: var(--nic_main); */
+    /* color: #fff; */
+    color: var(--nic_main);
+    /* text-align: center; */
+    /* width: 350px; */
+    /* height: 75px; */
+    /* border: 1px solid #fff; */
+    margin: 0;
+    text-decoration: none;
+    padding-left: 1rem;
+    grid-column: 2;
+    grid-row: 3;
+    border-left: solid 8px var(--nic_main);
+}
+.button_cal:hover {
+    background-color: var(--nic_blue);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
 
+/* FOOTER */
+
+.footer {
+    font-size: .8em;
+    color: var(--nic_main);
+    line-height: 1rem;
+}
+
+.footer_flags {
+    margin-bottom: 1rem;
+}
+
+.additional_resources {
+    margin-bottom: 1rem;
 }
