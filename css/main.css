@@ -277,12 +277,11 @@ hr {
 }
 
 a {
-
-}
-
-a:hover {
     color: var(--nic_blue);
-    color: #fff;
+}
+a:hover {
+    /* color: var(--nic_blue); */
+    color: var(--nic_red);
 }
 
 /* Services */
@@ -356,6 +355,10 @@ a:hover {
 .reco_body {
     border-bottom: solid 3px var(--nic_blue);
     line-height: 1.4rem;
+    /* 221013 testing hiding */
+    text-overflow: ellipsis;
+    /* Needed to make it work */
+    overflow: hidden;
 }
 
 .reco_person {
@@ -571,9 +574,19 @@ a:hover {
 /* FOOTER */
 
 .footer {
+    margin-top: 3rem;
+    padding: 1rem;
     font-size: .8em;
-    color: var(--nic_main);
+    background-color: var(--nic_blue);
+    color: #fff;
     line-height: 1rem;
+}
+.footer a {
+    color: #fff;
+}
+.footer a:hover {
+    /* color: var(--nic_blue); */
+    color: var(--nic_red);
 }
 
 .footer_flags {
