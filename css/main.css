@@ -23,7 +23,8 @@ Base styles: opinionated defaults
     --nic_yellow: #f0ad4e; */
     --nic_main: #1f1300;
     --nic_red: #e84855;
-    --nic_yellow: #f9dc5c;
+    /* --nic_yellow: #f9dc5c; */
+    --nic_yellow: #FFCC00; /* EU yellow */
     /* --nic_blue: #3185fcff; */
     --nic_blue: #003399;
 }
@@ -174,6 +175,10 @@ body {
 
 /* Headings */
 
+.header_background {
+    background-color: var(--nic_blue);
+}
+
 .logo-and-search {
     width: 100%;
     display: flex;
@@ -181,6 +186,7 @@ body {
     margin-bottom: 0;
     margin-top: 1rem;
     align-items: center;
+    background-color: var(--nic_blue);
 }
 
 /* .header_title {
@@ -218,6 +224,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     font-weight: 500;
+    color: #fff;
 }
 
 h1 {
