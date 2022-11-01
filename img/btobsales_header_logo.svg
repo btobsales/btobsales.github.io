@@ -6,8 +6,15 @@
             <circle cx="522.891" cy="318.681" r="55.589" style="fill:rgb(0,51,153);stroke:white;stroke-width:3px;"/>
         </g>
         <g transform="matrix(1.02828,0,0,1.02828,93.589,141.523)">
-            <text x="36.156px" y="200.836px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:64px;fill:white;">Bt<tspan x="98.469px " y="200.836px ">o</tspan>BSales.</text>
-            <text x="370.219px" y="200.836px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:64px;fill:rgb(255,204,0);">EU</text>
+            <g transform="matrix(1,0,0,1,36.156,200.836)">
+                <text x="0px" y="0px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:64px;">Bt</text>
+            </g>
+            <g transform="matrix(1,0,0,1,98.469,200.836)">
+                <text x="0px" y="0px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:64px;">oBSales.</text>
+            </g>
+        </g>
+        <g transform="matrix(1.02828,0,0,1.02828,474.278,348.039)">
+            <text x="0px" y="0px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:64px;fill:rgb(255,204,0);">EU</text>
         </g>
     </g>
 </svg>
