@@ -170,6 +170,7 @@ body {
 /* Illustrations */
 
 .main_illustration {
+    margin-top: 0;
     width: 100%;
     height: auto;
 }
@@ -225,23 +226,26 @@ body {
 .subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h1 {
+    color: var(--nic_blue);
     font-size: 2rem;
     margin-top: 2rem;
     /* background: #eee; */
-    border-bottom: solid .3em var(--nic_blue);
+    border-bottom: solid .3em var(--nic_main);
     padding-bottom: 10px;
+    /* margin-bottom: -10; */
     }
 
 h2 {
+    color: var(--nic_blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 1.5em;
     margin-top: 1.4em;
-    border-bottom: solid .15em var(--nic_blue);
+    border-bottom: solid .15em var(--nic_main);
     padding-bottom: 5px;
 }
 
@@ -269,7 +273,7 @@ h6 {
     margin-top: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     line-height: 1.1;
     margin-bottom: .8em;
     font-family: 'Roboto', sans-serif;
@@ -305,9 +309,8 @@ a:hover {
 
 .services {
     float: left;
-    background-color: var(--nic_main);
+    background-color: var(--nic_blue);
     color: #fff;
-    /* color: var(--nic_main); */
     text-align: center;
     width: 350px;
     border: 1px solid #fff;
@@ -316,13 +319,18 @@ a:hover {
     padding: 0.5rem;
 }
 .services:hover {
-    background-color: var(--nic_blue);
-    color: #fff;
+    /* background-color: var(--nic_blue); */
+    color: var(--nic_yellow);
     cursor: pointer;
     text-decoration: none;
 }
 .services h2 {
     border-bottom: none;
+    color: #fff;
+}
+.services:hover h2 {
+    border-bottom: none;
+    color: var(--nic_yellow);
 }
 
 
@@ -370,8 +378,14 @@ a:hover {
 }
 
 .reco_person {
+    padding-top: 0.5rem;
     display: grid;
     grid-template-columns: 120px auto;
+}
+
+.reco_person_details {
+    border-left: solid 8px var(--nic_yellow);
+    padding-left: 0.5rem;
 }
 
 .headshot_cell {
@@ -389,7 +403,7 @@ a:hover {
 .reco_name {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    border-left: solid 5px var(--nic_main);
+    font-size: 1.2rem;
     /* border-top: solid 3px var(--nic_main) */
     padding: 5px;
     margin: 0.5rem 0 0 0;
@@ -399,12 +413,11 @@ a:hover {
     font-size: 0.9em;
     margin: 0.5rem 0 0 0;
 }
-.reco_person_title:before {
+/* .reco_person_title:before {
     content: '>>> ';
-    /* content: open-quote; */
     color: var(--nic_blue);
     vertical-align: top;
-}
+} */
 
 .reco_relationship {
     font-size: 0.9em;
@@ -603,4 +616,24 @@ a:hover {
 
 .additional_resources {
     margin-bottom: 1rem;
+}
+
+/* SHOW MORE */
+
+.textButton {
+    /* margin-top: 0.5rem; */
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: .8em;
+    font-family: 'Lato';
+    font-weight: bold;
+    background-color: var(--nic_blue);
+    color: white;
+    line-height: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.textButton:hover {
+    /* background-color: var(--nic_blue); */
+    color: var(--nic_yellow);
 }

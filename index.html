@@ -34,6 +34,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
 
+    <!-- For Show More/Less -->
+    <style>
+        #moreText {
+            display: none;
+        }
+    </style>
+
     <!-- Logo -->
     <meta property="og:logo" content="https://btobsales.eu/img/edelweiss_black.svg">
 
@@ -99,7 +106,7 @@
 
 
         <!-- Recommendations -->
-        <h2><img class="star" src="img/star_blue.svg" alt="star"/> Recommendations</h2>
+        <h2><img class="star" src="img/star_yellow.svg" alt="star"/> Recommendations</h2>
 
         <div class="reco_card">
 
@@ -107,18 +114,23 @@
         
             <div class="reco_body">
                 <p></p>
-                <p>You came at a time where we desperately needed help, and you came in like a seasoned pro.</p>
+                <p>You came at a time where we desperately needed help, and you came in like a seasoned pro.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>It was a great ride. I wish you all the best in your future endeavors.</p>
                 <p></p>
                 <p>Don’t be a stranger, maybe our paths will cross again. All the best!</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/ruben.jpeg" alt="Ruben"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Ruben Castano</p>
                     <p class="reco_person_title">CEO at 6Connex (SaaS for virtual events)</p>
                     <p class="reco_relationship">Ruben was a client of Nicolas</p>
@@ -130,24 +142,29 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nic is one of the most incredible leaders you will ever encounter. </div>
+            <div class="reco_title">Nic is one of the most incredible leaders you will ever encounter.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>It's challenging to be concise in this recommendation as Nic possesses so many incredible talents.</p>
+                <p>It's challenging to be concise in this recommendation as Nic possesses so many incredible talents.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>He is a leader who is truly passionate and committed, not only to the mission, but to his people. He leads in a way that is inspiring, that builds a legion of trusting followers and that makes you realize that each minute you spend listening to him speak is going to benefit your growth tremendously.  Nothing is wasted in his conversations - everything is of value and is meaningful.</p>
                 <p></p>
                 <p>Anyone can be a manager and get to end goals with basic skills, but it takes a complex balance of intelligence, mentorship and follow through to be a true leader and to accomplish what Nic has done at ON24.  He is always thinking 18-24 months ahead - how to invest in himself so that he can be better for his people and how he can grow to drive superior results for his organization.</p>
                 <p></p>
                 <p>Nic has redesigned the way I think about growth as an individual and as a leader.  He has simultaneously given me a foundational and strategic understanding of SaaS technologies.  He has opened me up to new ways of thought and completely restructured how I view critical components of corporate operations.  He has been a true mentor - a leader like no other.  I simply can not wait to see what he accomplishes next.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/sam.jpeg" alt="Sam"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Sam McKenna</p>
                     <p class="reco_person_title">Founder at #samsales, now one of the most sought-after LinkedIn influencers and sales experts</p>
                     <p class="reco_relationship">Nicolas was senior to Samantha but didn't manage Samantha directly</p>
@@ -159,11 +176,12 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nic is exceptionally talented, a true powerhouse of leadership and results. </div>
+            <div class="reco_title">Nic is exceptionally talented, a true powerhouse of leadership and results.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>His business acumen and expertise is the SaaS realm, combined with his constant thirst for knowledge means he's not just leading with the most up-to-date sales methodologies - he's defining and innovating them.  </p>
+                <p>His business acumen and expertise is the SaaS realm, combined with his constant thirst for knowledge means he's not just leading with the most up-to-date sales methodologies - he's defining and innovating them.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nic has a natural skill for reading the room and inspiring trust in employees, peers and clients.  </p>
                 <p></p>
@@ -172,13 +190,17 @@
                 <p>It's notable to mention he has a comprehensive understanding of the nuances of the global market, and speaks English, French and German with native fluency.  </p>
                 <p></p>
                 <p>Nic is one of the strongest and most tenacious people I've had the pleasure of working with - he's truly brilliant, simply cannot recommend him highly enough.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/tiffany.jpeg" alt="Tiffany"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Tiffany Jensen</p>
                     <p class="reco_person_title">Executive Vice President, Americas</p>
                     <p class="reco_relationship">Tiffany reported directly to Nicolas</p>
@@ -194,7 +216,8 @@
         
             <div class="reco_body">
                 <p></p>
-                <p>I have come to trust him as a key advisor and sounding board on  issues related to management, execution, and some of the most exciting trends in the market today. </p>
+                <p>I have come to trust him as a key advisor and sounding board on  issues related to management, execution, and some of the most exciting trends in the market today.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>I would divide my respect for Nic's accomplishments into three key areas:</p>
                 <p></p>
@@ -205,13 +228,17 @@
                 <p>In my experience, Nic is a great analyst on almost any business challenge, with extraordinary passion and knowledge specifically in the areas of SaaS and Sales Automation.  </p>
                 <p></p>
                 <p>I plan to continue my association with him throughout my career, as he has proven to be an invaluable resource and a proven producer.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/andrew.jpeg" alt="Andrew"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Andrew Fritts</p>
                     <p class="reco_person_title">Managing Director, Accenture</p>
                     <p class="reco_relationship">Andrew worked with Nicolas but on different teams</p>
@@ -223,11 +250,12 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nic is an exemplary leader, warrior, visionary manager.  </div>
+            <div class="reco_title">Nic is an exemplary leader, warrior, visionary manager.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>I have never been led by someone who listens as well, drives me to work my hardest, and is able to work efficiently and effectively at a million miles per hour.  </p>
+                <p>I have never been led by someone who listens as well, drives me to work my hardest, and is able to work efficiently and effectively at a million miles per hour.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>He is full of ideas, and unlike many leaders, he can create a plan and a process and see his ideas to fruition.  </p>
                 <p></p>
@@ -236,13 +264,17 @@
                 <p>He can articulate his ideas and constructive feedback in three languages AND he will go to battle for what he believes in and stand his ground.  </p>
                 <p></p>
                 <p>In a world of "yes" people, Nic isn't affraid to stand for what he believes in and for that reason I hope to work with Nic again in the future. </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/sarah.jpeg" alt="Sarah"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Sarah Counts</p>
                     <p class="reco_person_title">COO Wazoku</p>
                     <p class="reco_relationship">Sarah reported directly to Nicolas</p>
@@ -254,20 +286,25 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nicolas is a rare combination of technology evangelist, sales leader and someone who does things ''the right way''. </div>
+            <div class="reco_title">Nicolas is a rare combination of technology evangelist, sales leader and someone who does things ''the right way''.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>He demands a lot from himself and those around of him but his unfailing honesty, accuracy and good manners inspire an unusually high level of respect from his colleagues (I have rarely heard a leader be spoken of so positively), clients and suppliers. </p>
+                <p>He demands a lot from himself and those around of him but his unfailing honesty, accuracy and good manners inspire an unusually high level of respect from his colleagues (I have rarely heard a leader be spoken of so positively), clients and suppliers.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>He has achieved a lot in a short space of time but I suspect there is a lot more to come!</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/rob.jpeg" alt="Rob"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Rob Case</p>
                     <p class="reco_person_title">Director, Tomka Ltd</p>
                     <p class="reco_relationship">Nicolas was Rob’s client</p>
@@ -279,11 +316,12 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nic is hands down the best sales leader I have worked for and with. </div>
+            <div class="reco_title">Nic is hands down the best sales leader I have worked for and with.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>He is a perfect example of leading by example and with integrity, dedication and fairness. </p>
+                <p>He is a perfect example of leading by example and with integrity, dedication and fairness.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nic is a magnanimous leader who is very open and honest with his feedback. </p>
                 <p></p>
@@ -292,13 +330,17 @@
                 <p>Nic understands the sales world like no one else I know. He has a technology and app for everything and helps everyone understand their weaknesses and improve on them. He always puts himself in the other persons shoes (both colleagues and customers) which ensures that every result has the best outcome for both parties.</p>
                 <p></p>
                 <p>Thank you Nic for everything and I have no doubt that you will be incredibly successful with your next venture. </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/dustyn.jpeg" alt="Dustyn"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Dustyn Smith</p>
                     <p class="reco_person_title">Co-Founder & CRO, HEMOData</p>
                     <p class="reco_relationship">Dustyn reported directly to Nicolas</p>
@@ -310,22 +352,27 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nic is a dedicated professional with a passion for excellence. </div>
+            <div class="reco_title">Nic is a dedicated professional with a passion for excellence.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>His technical knowlege is impressive and he expects all his team to strive for the same high standards he sets himself. </p>
+                <p>His technical knowlege is impressive and he expects all his team to strive for the same high standards he sets himself.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>I believe that is why he has the trust and respect of his colleagues in order to grow such a successful team in Europe. </p>
                 <p></p>
                 <p>I always enjoyed working with him.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/james.jpeg" alt="James"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">James Stanworth</p>
                     <p class="reco_person_title">Senior Account Executive, Enterprise, APJ</p>
                     <p class="reco_relationship">Nicolas was senior to James but didn't manage James directly</p>
@@ -337,24 +384,29 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Simply put, Nic was one of the most capable, principled, intelligent and committed sales leaders I have ever worked with at ON24.  </div>
+            <div class="reco_title">Simply put, Nic was one of the most capable, principled, intelligent and committed sales leaders I have ever worked with at ON24.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>He built - virtually from the ground up - a robust channel presence for ON24 in EMEA, developing tools and resources to drive significant ON24 revenue growth and partner success.  </p>
+                <p>He built - virtually from the ground up - a robust channel presence for ON24 in EMEA, developing tools and resources to drive significant ON24 revenue growth and partner success.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nic always had a thorough-going commitment to collaboration with others, always putting company performance ahead of personal accolades.  </p>
                 <p></p>
                 <p>He has had success in every single sales and management role within the company.  </p>
                 <p></p>
                 <p>I have little doubt he will be hugely successful in his future pursuits.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/chuck.jpeg" alt="Chuck"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Chuck Brotman</p>
                     <p class="reco_person_title">Co-Founder & VP Sales, Blueprint Expansion</p>
                     <p class="reco_relationship">Chuck worked with Nicolas but on different teams</p>
@@ -366,11 +418,12 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nic is one of the most driven and goal-oriented people I have ever met. </div>
+            <div class="reco_title">Nic is one of the most driven and goal-oriented people I have ever met.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>Regardless of how many knock-backs he encounters Nic will persist and try another route. However, what sets Nic apart from others is his ability to not be blinded by that focus. Instead, he is very aware of what goes on around him and is able to create win-win situations for himself and others he works with (and for).</p>
+                <p>Regardless of how many knock-backs he encounters Nic will persist and try another route. However, what sets Nic apart from others is his ability to not be blinded by that focus. Instead, he is very aware of what goes on around him and is able to create win-win situations for himself and others he works with (and for).<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>As a result, working with Nic is an experience that also pushes others to excel and continually improve. The outcome is not blind ambition, but positive achievement. </p>
                 <p></p>
@@ -379,13 +432,17 @@
                 <p>Nic is extremely smart and business-savvy. To say he is well-informed in the B2B tech and SaaS area is an understatement. He is able to spot early and small differentiators that set successful companies and individuals apart and apply them to his own area of business.</p>
                 <p></p>
                 <p>I have worked alongside Nic as a colleague, as well as under him as a leader, for over 5 years. From a personal and professional perspective, during that time, I have got to know him as a person with a strong moral compass, who is fair, open and honest, and extremely positive. </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/lev.jpeg" alt="Lev"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Lev Cribb</p>
                     <p class="reco_person_title">Managing Director, WebinarExperts</p>
                     <p class="reco_relationship">Lev reported directly to Nicolas</p>
@@ -401,7 +458,8 @@
         
             <div class="reco_body">
                 <p></p>
-                <p>Nic is extremely smart and business savvy – this is not by chance or good fortune.  </p>
+                <p>Nic is extremely smart and business savvy – this is not by chance or good fortune.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>He constantly strives to better himself, consuming, learning and sharing ongoing. </p>
                 <p></p>
@@ -414,13 +472,17 @@
                 <p>In my 3 years working here at ON24 he has proven to be an exceptional coach, outstanding leader and the best mentor I could have hoped for, It has been a pleasure working with him.</p>
                 <p></p>
                 <p>I have no doubt that what he chooses to set his mind to he will accomplish, he truly is a visionary in the B2B Tech and SaaS environment, he will achieve great things - that I am sure of! </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/harish.jpeg" alt="Harish"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Harish Sethi</p>
                     <p class="reco_person_title">Regional Sales Director, ON24</p>
                     <p class="reco_relationship">Harish reported directly to Nicolas</p>
@@ -432,11 +494,12 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">I am extremely fortunate to have worked (and learned from) an extraordinary leader and manager. </div>
+            <div class="reco_title">I am extremely fortunate to have worked (and learned from) an extraordinary leader and manager.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>Nic’s drive, determination and willingness to go against the status quo have driven not only his own success but also the success of the entire sales team at ON24 EMEA. </p>
+                <p>Nic’s drive, determination and willingness to go against the status quo have driven not only his own success but also the success of the entire sales team at ON24 EMEA.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>On a personal level, Nic’s eye for detail and ability to take an idea from inception to completion is second to none and I have reaped the rewards having had the opportunity to learn firsthand how to implement plans and processes within a growing SaaS business. </p>
                 <p></p>
@@ -445,13 +508,17 @@
                 <p>In an industry that is enjoying stratospheric growth Nic’s ability to engage intellectually (in multiple languages), imaginatively and have his client’s best interests at heart make references to Nic’s acumen as the “ON24 Warrior” completely true. </p>
                 <p></p>
                 <p>I am looking forward to seeing what Nic accomplishes next and I plan to continue my association with him throughout my career.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/taz.jpeg" alt="Taz"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Taz Bhachoo</p>
                     <p class="reco_person_title">Head of Sales at SEDNA | SaaS Sales Leader</p>
                     <p class="reco_relationship">Taz reported directly to Nicolas</p>
@@ -463,22 +530,27 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">It's rare to come across a standout talent like Nic! </div>
+            <div class="reco_title">It's rare to come across a standout talent like Nic!</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>I had the pleasure of reporting to him directly for over three years. </p>
+                <p>I had the pleasure of reporting to him directly for over three years.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nic's ability to multitask and simplify complex business problems was unlike any I've seen before - making a dramatic difference in the productivity of our team. </p>
                 <p></p>
                 <p>I would work with him again in a heartbeat.</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/ankit.jpeg" alt="Ankit"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Ankit Sagar</p>
                     <p class="reco_person_title">Vice President, Sales at ON24</p>
                     <p class="reco_relationship">Ankit reported directly to Nicolas</p>
@@ -490,22 +562,27 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nicolas has the vision and the passion to make his ideas come true. And he has the industry and corporate real-life experience to become a "hustler". </div>
+            <div class="reco_title">Nicolas has the vision and the passion to make his ideas come true. And he has the industry and corporate real-life experience to become a "hustler".</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>He has accomplished incredible goals in his career always being data-driven and mission-oriented and these skills will be an awesome asset for any startup/orgnisation. If he finds the right technical mind, both together can create a great success story. </p>
+                <p>He has accomplished incredible goals in his career always being data-driven and mission-oriented and these skills will be an awesome asset for any startup/orgnisation. If he finds the right technical mind, both together can create a great success story.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nicolas will provide the vision, the customer/market fit orientation and the drive. </p>
                 <p></p>
                 <p>Furthermore he is able to understand technical challenges to a deep level, which I am certain will make it easy for a tech co-founder to establish common roadmaps and goals. </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/miguel.jpeg" alt="Miguel"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Miguel Arias</p>
                     <p class="reco_person_title">General Partner, K FUND</p>
                     <p class="reco_relationship">Miguel worked with Nicolas on the same team</p>
@@ -517,24 +594,29 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">Nicolas, it was my honor to work with you 2 times in my life! </div>
+            <div class="reco_title">Nicolas, it was my honor to work with you 2 times in my life!</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>Nicolas worked with me during his trainee at Sagemcom (we tried to hire him back then but he wanted to finish his studies, unfortunately once his studies finished another company was faster than us, but we finally got my hands on him – After very successful years with us Nicolas wanted for personal reasons to move to the UK and left us).</p>
+                <p>Nicolas worked with me during his trainee at Sagemcom (we tried to hire him back then but he wanted to finish his studies, unfortunately once his studies finished another company was faster than us, but we finally got my hands on him – After very successful years with us Nicolas wanted for personal reasons to move to the UK and left us).<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nicolas is a great sales man who manages complex Sales and sets up the right strategy for that, covering incredibly well the buying center. During the time he worked for us, he managed to close numerous deals with Tier1 operators in Germany !</p>
                 <p></p>
                 <p>What makes him one of the best sales guy I met in my life is that on top of his sales skills he has a strong technical understanding coming from the fact that he personally wants to understand. </p>
                 <p></p>
                 <p>Furthermore Nicolas works autonomously and in a very professional matter. I can only recommend him and hope that our ways will cross again !</p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/olivier.jpeg" alt="Olivier"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Olivier Dronne</p>
                     <p class="reco_person_title">Managing Director of Sagemcom Broadband Germany GmbH</p>
                     <p class="reco_relationship">Olivier managed Nicolas directly</p>
@@ -546,20 +628,25 @@
         
         <div class="reco_card">
         
-            <div class="reco_title">I've had the pleasure of working with Nic for over 5 years. </div>
+            <div class="reco_title">I've had the pleasure of working with Nic for over 5 years.</div>
         
             <div class="reco_body">
                 <p></p>
-                <p>Nic is the hardest working person I have ever met and will always be successful as he is result driven and passionate about everything he does. </p>
+                <p>Nic is the hardest working person I have ever met and will always be successful as he is result driven and passionate about everything he does.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>He is also an incredible manager who pushes his employees to get the very best from them and to help them further their career. </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/carrie.jpeg" alt="Carrie"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Carrie Smith</p>
                     <p class="reco_person_title">Sales Operations Executive, Investis Digital</p>
                     <p class="reco_relationship">Carrie reported directly to Nicolas</p>
@@ -575,18 +662,23 @@
         
             <div class="reco_body">
                 <p></p>
-                <p>When it comes to business models and how to drive a company forward, he is one of the most knowledgeable and savvy people I have known. With his great passion for SaaS models and “make-it-happen” attitude, he is the right fit for any dynamic company.</p>
+                <p>When it comes to business models and how to drive a company forward, he is one of the most knowledgeable and savvy people I have known. With his great passion for SaaS models and “make-it-happen” attitude, he is the right fit for any dynamic company.<span id="points">..</span></p>
+                <span id="moreText">
                 <p></p>
                 <p>Nicolas is a natural team leader, who knows how to drive the business forward while inspiring his team to do the same. The humbleness with which he carried his position is admirable, which makes him very approachable for discussing any concerns or ideas.</p>
                 <p></p>
                 <p>Much loved by both colleagues and clients for his enthusiastic and personal yet professional approach, I would be first in line to hire him. </p>
+                </span>
+                <button onclick="toggleText(event)" id="textButton" class="textButton">
+                Show More
+                </button>
             </div>
         
             <div class="reco_person">
         
                 <div class="headshot_cell"><img class="headshot" src="img/people/lien.jpeg" alt="Lien"></div>
         
-                <div>
+                <div class="reco_person_details">
                     <p class="reco_name">Lien Vandeputte</p>
                     <p class="reco_person_title">Director Customer Success, ON24</p>
                     <p class="reco_relationship">Lien reported directly to Nicolas</p>
@@ -613,10 +705,10 @@
             <p>I'm French-Austrian, grew up in Paris, living now in Germany after 10 years in London.</p>
 
 
-            <p>I have been in Sales most of my life, starting when I was a kid, working with my mother for pocket money, helping her as a freelance B2B rep in the 90's!</p>
+            <p>Been in Sales for most of my life, starting when I was a kid, working with my mother for pocket money, helping her as a freelance B2B rep in the 90's!</p>
 
 
-            <p>I have climbed the Sales career ladder to be the youngest VP Sales, then Managing Director Europe (2x) - both times in VC-backed SaaS startups, encompassing leadership of all local functions (Sales, Marketing, Customer Success, Operations) with a team of 30+.</p>
+            <p>Climbed the Sales career ladder to be the youngest VP Sales, then Managing Director Europe (2x) - both times in VC-backed SaaS startups, encompassing leadership of all local functions (Sales, Marketing, Customer Success, Operations) with a team of 30+.</p>
 
             Both companies IPO'ed.</p>
 
@@ -626,7 +718,7 @@
             <p>In 2020, the pandemic meant an opportunity to go back to the world of SaaS (virtual events), offering my skills and experience, providing "Sales-as-a-Service" to US B2B SaaS looking to expand in Europe - doing what I do best, while providing me with a better life balance in this new remote world.</p>
 
 
-            <p>I love the Game of Sales & building processes and automations 😁</p>
+            <p>I love the Game of Sales & building teams, processes and automations 😁</p>
 
             <p>You can read more about my approach to Sales on <a href="https://notes.nicolasdeville.com" target="_blank">Nic's notes</a>.</p>
 
@@ -684,12 +776,35 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- Show More/Less -->
     <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        function toggleText(event) {
+
+            let btn = event.target; // element that was clicked
+            let parent = btn.parentElement; // its parent
+            var points = parent.querySelector("#points");
+            var showMoreText = parent.querySelector("#moreText");
+            var buttonText = parent.querySelector("#textButton");
+
+            if (points.style.display === "none") {
+
+                showMoreText.style.display = "none";
+
+                points.style.display = "inline";
+
+                buttonText.innerHTML = "Show More";
+            }
+
+            else {
+
+                showMoreText.style.display = "inline";
+
+                points.style.display = "none";
+
+                buttonText.innerHTML = "Show Less";
+            }
+        }
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
 
 </body>
 
