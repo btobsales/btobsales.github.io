@@ -148,6 +148,14 @@ body {
     width: 100%;
     /* max-height: 500px; */
     background-color: white;
+    padding-bottom: 2rem;
+}
+.section_intro .container {
+    padding: 2.5rem;
+    border: solid 1px var(--nic_main);
+    margin-bottom: 1rem;
+    box-shadow: 5px 10px var(--nic_yellow);
+    background-color: white;
 }
 
 .box_intro {
@@ -161,8 +169,8 @@ body {
     padding-top: 1rem;
     width: 200px;
     border-radius: 50%;
-    box-shadow: 5px 10px var(--nic_yellow);
-    border: solid 1px white;
+    /* box-shadow: 5px 10px var(--nic_yellow);
+    border: solid 1px white; */
 }
 
 .nic_intro_blurb {
@@ -179,7 +187,21 @@ body {
     width: 100%;
     /* background-color: #b3d4fc; */
     /* padding-top: 1rem; */
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
+}
+
+.section_why_me {
+    width: 100%;
+    background-color: var(--nic_blue);
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.section_why_aas {
+    width: 100%;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
 }
 
 .section_recommendations {
@@ -364,6 +386,82 @@ a:hover {
     color: var(--nic_red);
 }
 
+
+/* USPs */
+
+.usp_box {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.usp {
+    width: 250px; 
+    height: 250px; 
+    margin: auto;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border: 1px solid var(--nic_blue);
+    text-decoration: none;
+    padding: 0.5rem;
+    border: solid 1px var(--nic_main);
+    box-shadow: 5px 10px var(--nic_yellow);
+    background-color: white;
+    margin-bottom: 1rem;
+}
+/* .usp:hover {
+    color: var(--nic_yellow);
+    cursor: pointer;
+    text-decoration: none;
+}
+.usp h2 {
+    border-bottom: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.usp:hover h2 {
+    border-bottom: none;
+    color: var(--nic_yellow);
+} */
+
+.usp p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.usp_title {
+    color: var(--nic_blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    /* padding-bottom: 1rem; */
+}
+
+.usp_tagline {
+    color: var(--nic_main);
+    /* padding-bottom: 1rem; */
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.usp_icon_box {
+    width: 75px;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.usp_icon {
+    width: 100%;
+}
+
+
 /* Services */
 
 .services_box {
@@ -412,15 +510,9 @@ a:hover {
 }
 
 .reco_card {
-    /* padding: 50px 0 0 50px; */
     padding: 2.5rem;
-    /* border-left: solid 1em #eee; */
-    /* border-left: solid 1em var(--nic_blue);
-    border-top: solid 0.8em;
-    border-right: solid 1em #fff;
-    border-bottom: solid 1em #fff; */
     border: solid 1px var(--nic_main);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     box-shadow: 5px 10px var(--nic_yellow);
     background-color: white;
 }
@@ -713,4 +805,10 @@ a:hover {
 .textButton:hover {
     /* background-color: var(--nic_blue); */
     color: var(--nic_yellow);
+}
+
+.inline_eu_flag {
+    width: 50px;
+    vertical-align: middle;
+    padding: 0 0.2rem 0 0.2rem;
 }
