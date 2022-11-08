@@ -134,6 +134,10 @@ body {
     color: white;
 }
 
+.blue-text {
+    color: var(--nic_blue);
+}
+
 .content {
     max-width: 800px;
 }
@@ -206,6 +210,14 @@ body {
     margin-top: 0.5rem;
     line-height: 1.4rem;
     font-size: 1.1rem;
+}
+
+.intro_subtitle {
+    color: var(--nic_main);
+    font-size: 2rem;
+    /* margin-top: 2rem; */
+    width: 100%;
+    text-align: center;
 }
 
 .section_services {
@@ -551,9 +563,31 @@ a:hover {
 }
 .reco_title:before {
     /* content: '“ '; */
-    content: open-quote;
+    /* content: open-quote; */
+    /* content: url('../img/icons/quote.svg');
     color: var(--nic_blue);
-    vertical-align: top;
+    vertical-align: top; */
+
+    /* background-image: url('../img/icons/quote.svg');
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:""; */
+
+    content: "";
+    background-image:url('../img/icons/quote.svg');
+    background-size: 100% 100%;
+    display: inline-block;
+
+    /*size of your image*/
+    height: 25px;
+    width: 25px;
+
+    /*if you want to change the position you can use margins or:*/
+    position: relative;
+    top: -12px;
+    left: -12px;
 }
 
 .reco_body {
