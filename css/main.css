@@ -148,20 +148,21 @@ body {
     width: 100%;
     /* max-height: 500px; */
     background-color: white;
-    padding-bottom: 2rem;
-}
-.section_intro .container {
-    padding: 2.5rem;
-    border: solid 1px var(--nic_main);
-    margin-bottom: 1rem;
-    box-shadow: 5px 10px var(--nic_yellow);
-    background-color: white;
+    padding: 2rem;
 }
 
 .box_intro {
-    padding-top: 0.5rem;
-    display: grid;
-    grid-template-columns: 200px auto;
+    /* padding-top: 0.5rem; */
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 200px auto; */
+    padding: 2.5rem;
+    border: solid 1px var(--nic_main);
+    /* margin-bottom: 1rem; */
+    box-shadow: 5px 10px var(--nic_yellow);
+    background-color: white;
+    margin: 0 2rem 0 2rem;
 }
 
 .nic_intro_headshot {
