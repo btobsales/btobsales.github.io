@@ -142,6 +142,7 @@ body {
     width: 100%;
     /* max-height: 500px; */
     background-color: var(--nic_blue);
+    padding-bottom: 1rem;
 }
 
 .section_intro {
@@ -149,34 +150,57 @@ body {
     /* max-height: 500px; */
     background-color: white;
     padding: 2rem;
+    background-image: url('../img/DALL·E-europe-expansion.jpg');
+    background-size: cover;
 }
 
 .box_intro {
     /* padding-top: 0.5rem; */
     /* display: grid; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    justify-content: space-between;
     /* grid-template-columns: 200px auto; */
-    padding: 2.5rem;
-    border: solid 1px var(--nic_main);
+    padding: 2rem;
+    border: solid 5px var(--nic_yellow);
     /* margin-bottom: 1rem; */
-    box-shadow: 5px 10px var(--nic_yellow);
-    background-color: white;
+    /* box-shadow: 5px 10px var(--nic_yellow); */
+    background-color: rgba(255,255,255,0.9);
     margin: 0 2rem 0 2rem;
+}
+
+.nic_intro_headshot_box {
+    max-width: 200px;
+    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+
 }
 
 .nic_intro_headshot {
     vertical-align: top;
-    padding-top: 1rem;
-    width: 200px;
+    /* padding-top: 1rem; */
+    width: 100%;
     border-radius: 50%;
+    /* margin-bottom: 0.1rem; */
+    /* object-fit: center; */
     /* box-shadow: 5px 10px var(--nic_yellow);
     border: solid 1px white; */
 }
 
+.nic_intro_sig {
+    max-height: 70px;
+    margin-top: 0;
+    margin: auto;
+    padding-bottom: 0.5rem;
+}
+
 .nic_intro_blurb {
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1rem;
     line-height: 1.4rem;
+    max-width: 350px;
+    /* max-width: auto; */
 }
 .nic_intro_blurb p {
     margin-top: 0.5rem;
@@ -326,7 +350,6 @@ h1 {
     margin-top: 2rem;
     /* background: #eee; */
     /* border-bottom: solid .3em var(--nic_main); */
-    padding-bottom: 3rem;
     }
 
 h2 {
@@ -480,6 +503,7 @@ a:hover {
     color: #fff;
     text-align: center;
     width: 350px;
+    height: 175px;
     border: 1px solid #fff;
     margin: 0;
     text-decoration: none;
@@ -490,6 +514,7 @@ a:hover {
     color: var(--nic_yellow);
     cursor: pointer;
     text-decoration: none;
+    background-image: url('../img/eu-background.svg');
 }
 .services h2 {
     border-bottom: none;
@@ -498,7 +523,7 @@ a:hover {
 }
 .services:hover h2 {
     border-bottom: none;
-    color: var(--nic_yellow);
+    /* color: var(--nic_yellow); */
 }
 
 
