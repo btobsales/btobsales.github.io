@@ -2,7 +2,8 @@
 
 /* Global variables */
 :root {
-    --nic_main: #1f1300;
+    /* --nic_main: #1f1300; */
+    --nic_main: #020202;
     --nic_red: #e84855;
     --nic_yellow: #FFCC00; /* EU yellow */
     --nic_blue: #003399;
@@ -153,7 +154,7 @@ body {
     width: 100%;
     /* max-height: 500px; */
     background-color: white;
-    padding: 3%;
+    padding: 5%;
     background-image: url('../img/DALL·E-europe-expansion.jpg');
     background-size: cover;
 }
@@ -280,7 +281,8 @@ body {
 	float: none !important;
     max-width: 800px;
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    /* padding-right: 0.5rem; */
+    padding: 0.5rem;
 }
 
 .section_subtitle {
@@ -482,6 +484,7 @@ a:hover {
     letter-spacing: 0.2rem;
     text-align: center;
     /* padding-bottom: 1rem; */
+    text-transform: uppercase;
 }
 
 .usp_tagline {
@@ -500,6 +503,65 @@ a:hover {
 }
 
 .usp_icon {
+    width: 100%;
+}
+
+/* FEATURES */
+
+.feature_box {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.feature {
+    /* width: 250px; 
+    height: auto;  */
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    border: 1px solid var(--nic_blue);
+    text-decoration: none;
+    padding: 0.5rem;
+    /* border: solid 1px var(--nic_main); */
+    /* box-shadow: 5px 10px var(--nic_yellow); */
+    /* background-color: white; */
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+}
+
+.feature_title {
+    color: var(--nic_blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.feature_tagline {
+    color: var(--nic_main);
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.feature_icon_box {
+    width: 75px;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.feature_icon {
     width: 100%;
 }
 
@@ -880,7 +942,7 @@ a:hover {
 }
 
 .rec_table {
-    width: 100%;
+    max-width: 100%;
     padding: 3%;
 }
 .rec_table thead {
@@ -898,7 +960,7 @@ a:hover {
     /* number and size of columns and rows */
     /* grid-template-columns: 3fr auto 1fr 2fr; 2 fixed columns, 2 responsive columns. `fr` for fractional */
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(6, 200px); 
+    /* grid-template-rows: repeat(6, 200px);  */
     /* gaps / gutters */
     /* column-gap: 30px; */
     /* row-gap: 50px; */
@@ -912,13 +974,14 @@ a:hover {
     margin: 1rem;
     text-align: center;
     box-shadow: 5px 10px var(--nic_yellow);
+    height: 180px;
 }
 
-.usp p {
+/* .usp p {
     padding-bottom: 0;
     margin-bottom: 0;
     margin-top: 0;
-}
+} */
 
 .benefits_title {
     color: var(--nic_blue);
@@ -927,6 +990,7 @@ a:hover {
     letter-spacing: 0.2rem;
     text-align: center;
     /* padding-bottom: 1rem; */
+    /* vertical-align: middle; */
     margin: 0;
 }
 
@@ -935,6 +999,7 @@ a:hover {
     margin: auto;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    /* vertical-align: middle; */
 }
 
 .benefits_icon {
@@ -942,13 +1007,14 @@ a:hover {
 }
 
 .box_benefits_description {
-    vertical-align: middle;
+    /* height: 100%; */
+    /* vertical-align: middle; */
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10%;
     color: var(--nic_main);
-    /* padding-bottom: 1rem; */
-    padding-top: 1rem;
+    padding-bottom: auto; 
+    padding-top: auto;
     font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
 }
