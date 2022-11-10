@@ -518,13 +518,16 @@ a:hover {
 .feature {
     /* width: 250px; 
     height: auto;  */
+    width: 100%;
     margin: auto;
     color: #fff;
     text-align: center;
     border: 1px solid var(--nic_blue);
     text-decoration: none;
-    padding: 0.5rem;
-    /* border: solid 1px var(--nic_main); */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    border: solid 1px white;
     /* box-shadow: 5px 10px var(--nic_yellow); */
     /* background-color: white; */
     margin-bottom: 1rem;
@@ -550,8 +553,9 @@ a:hover {
 .feature_tagline {
     color: var(--nic_main);
     padding-top: 1rem;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     font-family: 'Lato', sans-serif;
+    text-align: left;
 }
 
 .feature_icon_box {
@@ -1017,4 +1021,16 @@ a:hover {
     padding-top: auto;
     font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
+}
+
+/* MISC */
+
+.and_more {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: uppercase;
 }
