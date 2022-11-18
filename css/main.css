@@ -131,6 +131,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 .white-text {
     color: white;
 }
@@ -796,7 +800,7 @@ a:hover {
 .nic_blurb {
     margin: 1rem;
     margin-bottom: 2rem;
-    line-height: 1.4rem;
+    /* line-height: 1.4rem; */
 }
 
 /* CONTACT ME */
