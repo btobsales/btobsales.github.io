@@ -280,6 +280,14 @@ p {
     padding-bottom: 1rem;
 }
 
+.section_table {
+    width: 100%;
+    /* background-color: var(--nic_blue); */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #003399 solid 5px;
+}
+
 .container {
     margin: 0 auto !important; 
 	float: none !important;
@@ -1058,4 +1066,19 @@ a:hover {
     vertical-align: bottom;
     padding-top: 15px;
     /* padding: auto; */
+}
+
+/* TABLES */
+
+.col_socials {
+    white-space: nowrap;
+}
+
+.rec_table th {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rec_table td {
+    padding: 0.5rem;
 }
