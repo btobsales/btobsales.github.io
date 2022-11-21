@@ -135,6 +135,10 @@ p {
     line-height: 1.5rem;
 }
 
+ul {
+    line-height: 2rem;
+}
+
 .white-text {
     color: white;
 }
@@ -736,8 +740,9 @@ a:hover {
 /* MY LINKS / BOOKMARKS */
 
 .link_border {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* margin-right: 0.5rem; */
 
     /*Borders*/
 
@@ -787,7 +792,7 @@ a:hover {
     .link_title {
     font-weight: bold;
     margin-left: 0.8em;
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     /* Lato Black = weight 900 */
     font-weight: 900;
     }
