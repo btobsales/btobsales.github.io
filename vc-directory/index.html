@@ -102,7 +102,9 @@
             <h2 class="h2">List of 839 VCs</h2>
             <p>Focus on VCs active in EU & US and investing in SaaS, though not exclusive.</p> -->
 
-            <table class="rec_table">
+            <table class="rec_table"  id="myTable">
+
+            <input id="myInput" type="text"/>
 
             <tr>
                 <!-- <th scope="col"></th>
@@ -18585,7 +18587,7 @@
             <div>
 
                 <p>839 VCs indexed</p>
-                <p>Last updated 22 Nov 2022 10:56</p>
+                <p>Last updated 22 Nov 2022 10:59</p>
                 <p></p>
     
             </div>
@@ -18712,6 +18714,28 @@
                 buttonText.innerHTML = "Show Less";
             }
         }
+    </script>
+
+    <!-- Table Filtering -->
+    <script>
+
+        function filterTable(event) {
+            var filter = event.target.value.toUpperCase();
+            var rows = document.querySelector("#myTable tbody").rows;
+            
+            for (var i = 0; i < rows.length; i++) {
+                var firstCol = rows[i].cells[0].textContent.toUpperCase();
+                var secondCol = rows[i].cells[1].textContent.toUpperCase();
+                if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }      
+            }
+        }
+
+        document.querySelector('#myInput').addEventListener('keyup', filterTable, false);
+
     </script>
 
 </body>
