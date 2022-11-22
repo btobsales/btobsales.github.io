@@ -135,6 +135,10 @@ p {
     line-height: 1.5rem;
 }
 
+a {
+    color: var(--nic_blue);
+}
+
 ul {
     line-height: 2rem;
 }
@@ -165,6 +169,27 @@ ul {
     padding: 5%;
     background-image: url('../img/DALL·E-europe-expansion.jpg');
     background-size: cover;
+}
+
+.section_white {
+    width: 100%;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section_yellow {
+    width: 100%;
+    background-color: var(--nic_yellow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section_blue {
+    width: 100%;
+    background-color: var(--nic_blue);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .box_intro {
@@ -265,7 +290,6 @@ ul {
 
 .section_about_me {
     width: 100%;
-    /* background-color: #FFCC00; */
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -290,6 +314,22 @@ ul {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: #003399 solid 5px;
+}
+
+.section_contracts {
+    width: 100%;
+    background-color: var(--nic_yellow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* border-bottom: #003399 solid 5px; */
+}
+
+.section_webinarnet {
+    width: 100%;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
 }
 
 .container {
@@ -506,7 +546,7 @@ a:hover {
 .usp_tagline {
     color: var(--nic_main);
     /* padding-bottom: 1rem; */
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
 }
@@ -1105,4 +1145,131 @@ a:hover {
     vertical-align: bottom;
     padding-top: 15px;
     /* padding: auto; */
+}
+
+/* Contracts section */
+
+.contract_box {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    justify-content: center; 
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-image: url('../img/webinar-net-client-screenshot-purestorage.png');
+    background-size: auto 100%; */
+}
+
+.section_white .reco_card {
+    box-shadow: 5px 10px var(--nic_blue);
+}
+
+.contract {
+    max-width: 600px;
+    /* height: 250px;  */
+    margin: auto;
+    /* background-color: var(--nic_blue); */
+    color: #fff;
+    text-align: center;
+    /* border: 1px solid var(--nic_yellow); */
+    text-decoration: none;
+    padding: 0.5rem;
+    box-shadow: 5px 10px white;
+    margin-bottom: 1rem;
+}
+/* .contract:hover {
+    color: var(--nic_yellow);
+    cursor: pointer;
+    text-decoration: none;
+}
+.contract h2 {
+    border-bottom: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.contract:hover h2 {
+    border-bottom: none;
+    color: var(--nic_yellow);
+} */
+
+.contract p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contract_title {
+    color: var(--nic_blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    /* padding-bottom: 1rem; */
+    text-transform: uppercase;
+}
+
+.contract_tagline {
+    color: var(--nic_main);
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* padding-bottom: 1rem; */
+    padding-top: 1rem;
+    /* font-size: 0.8rem; */
+    font-family: 'Lato', sans-serif;
+}
+
+.contract_results {
+    color: var(--nic_main);
+    /* padding-bottom: 1rem; */
+    padding-top: 1rem;
+    /* font-size: 0.8rem; */
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding-left: 1rem
+}
+
+.contract_link {
+    padding-top: 0.5rem;
+}
+
+.contract_icon_box {
+    width: 120px;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.contract_icon {
+    width: 100%;
+}
+
+.contract_results_title {
+    color: var(--nic_blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.contract_results {
+    color: var(--nic_main);
+    /* padding-bottom: 1rem; */
+    padding-top: 1rem;
+    /* font-size: 0.8rem; */
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding-left: 1rem
+}
+
+.contract_result_highlight {
+    color: var(--nic_blue);
+    font-weight: 900;
+}
+
+.contract_flag {
+    width: 35px;
+    margin-top: 0.5rem;
 }
