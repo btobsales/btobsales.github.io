@@ -155,6 +155,15 @@ ul {
     max-width: 800px;
 }
 
+.container {
+    margin: 0 auto !important; 
+	float: none !important;
+    max-width: 800px;
+    padding-left: 0.5rem;
+    /* padding-right: 0.5rem; */
+    padding: 0.5rem;
+}
+
 .section_header {
     width: 100%;
     /* max-height: 500px; */
@@ -327,18 +336,31 @@ ul {
 .section_webinarnet {
     width: 100%;
     background-color: white;
+    margin-top: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
+    /* background-image: url('../img/webinar-net-client-screenshot-purestorage.png'); */
+    /* background-size: 100%; */
+    /* opacity: 0.2; */
+    /* position: relative; */
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/webinar-net-client-screenshot-purestorage_light.png');
+    background-repeat: no-repeat;  
+    background-position: center;
 }
 
-.container {
-    margin: 0 auto !important; 
-	float: none !important;
-    max-width: 800px;
-    padding-left: 0.5rem;
-    /* padding-right: 0.5rem; */
-    padding: 0.5rem;
+.section_6connex {
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* background-image: url('../img/webinar-net-client-screenshot-purestorage.png'); */
+    /* background-size: 100%; */
+    /* opacity: 0.2; */
+    /* position: relative; */
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/6connex-bg.png');
+    background-repeat: no-repeat;  
+    background-position: center;
 }
 
 .section_subtitle {
@@ -1155,8 +1177,7 @@ a:hover {
     justify-content: center; 
     flex-wrap: wrap;
     width: 100%;
-    /* background-image: url('../img/webinar-net-client-screenshot-purestorage.png');
-    background-size: auto 100%; */
+
 }
 
 .section_white .reco_card {
@@ -1173,7 +1194,7 @@ a:hover {
     /* border: 1px solid var(--nic_yellow); */
     text-decoration: none;
     padding: 0.5rem;
-    box-shadow: 5px 10px white;
+    /* box-shadow: 5px 10px white; */
     margin-bottom: 1rem;
 }
 /* .contract:hover {
