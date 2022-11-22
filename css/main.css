@@ -1081,9 +1081,14 @@ a:hover {
 
 .rec_table th {
     font-size: 0.8rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .rec_table td {
     padding: 0.5rem;
+}
+
+#myInput {
+    border: var(--nic_blue) solid 1px;
+    margin-left: 1.5rem;
 }
