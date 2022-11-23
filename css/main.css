@@ -139,8 +139,23 @@ a {
     color: var(--nic_blue);
 }
 
+
 ul {
     line-height: 2rem;
+    /* list-style-image: url(https://btobsales.eu/img/icons/eu.svg);
+    width: 100%; */
+}
+li {
+    list-style: none;
+}
+li::before {
+    content: '';
+    display: inline-block;
+    vertical-align: sub;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-image: url(https://btobsales.eu/img/icons/eu.svg);
+    margin-right: 10px;
 }
 
 .white-text {
@@ -162,6 +177,10 @@ ul {
     padding-left: 0.5rem;
     /* padding-right: 0.5rem; */
     padding: 0.5rem;
+}
+.container_bg {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1), white );
 }
 
 .section_header {
@@ -344,7 +363,7 @@ ul {
     /* opacity: 0.2; */
     /* position: relative; */
     /* background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/webinar-net-client-screenshot-purestorage_light.png'); */
-    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/webinarnet-bg.jpg');
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url('../img/webinarnet-bg.jpg');
     /* background-repeat: no-repeat;   */
     background-position: center;
     background-size: cover;
@@ -360,7 +379,9 @@ ul {
     /* background-size: 100%; */
     /* opacity: 0.2; */
     /* position: relative; */
-    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/6connex-bg.jpg');
+    /* background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/6connex-bg.jpg'); */
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url('../img/6connex-bg.jpg');
+    /* background: url('../img/6connex-bg.jpg'); */
     /* background-repeat: no-repeat;   */
     background-position: center;
     background-size: cover;
@@ -986,6 +1007,12 @@ a:hover {
     /* color: var(--nic_blue); */
     color: var(--nic_yellow);
 }
+.footer ul {
+    line-height: 1.5rem;
+}
+.footer p {
+    line-height: 1rem;
+}
 
 .footer-title {
     font-family: 'Roboto', sans-serif;
@@ -1193,6 +1220,9 @@ a:hover {
     text-align: center;
     text-decoration: none;
     padding: 0.5rem;
+}
+.contract ul {
+    margin-left: 1.5rem;
 }
 
 .contract p {
