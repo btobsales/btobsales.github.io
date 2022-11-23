@@ -336,31 +336,34 @@ ul {
 .section_webinarnet {
     width: 100%;
     background-color: white;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* background-image: url('../img/webinar-net-client-screenshot-purestorage.png'); */
     /* background-size: 100%; */
     /* opacity: 0.2; */
     /* position: relative; */
-    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/webinar-net-client-screenshot-purestorage_light.png');
-    background-repeat: no-repeat;  
+    /* background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/webinar-net-client-screenshot-purestorage_light.png'); */
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/webinarnet-bg.jpg');
+    /* background-repeat: no-repeat;   */
     background-position: center;
+    background-size: cover;
 }
 
 .section_6connex {
     width: 100%;
     background-color: white;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* background-image: url('../img/webinar-net-client-screenshot-purestorage.png'); */
     /* background-size: 100%; */
     /* opacity: 0.2; */
     /* position: relative; */
-    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/6connex-bg.png');
-    background-repeat: no-repeat;  
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ), url('../img/6connex-bg.jpg');
+    /* background-repeat: no-repeat;   */
     background-position: center;
+    background-size: cover;
 }
 
 .section_subtitle {
@@ -1169,7 +1172,7 @@ a:hover {
     /* padding: auto; */
 }
 
-/* Contracts section */
+/* CONTRACTS section */
 
 .contract_box {
     /* display: flex; */
@@ -1177,40 +1180,20 @@ a:hover {
     justify-content: center; 
     flex-wrap: wrap;
     width: 100%;
-
 }
 
-.section_white .reco_card {
+.section_6connex .reco_card {
     box-shadow: 5px 10px var(--nic_blue);
 }
 
 .contract {
     max-width: 600px;
-    /* height: 250px;  */
     margin: auto;
-    /* background-color: var(--nic_blue); */
     color: #fff;
     text-align: center;
-    /* border: 1px solid var(--nic_yellow); */
     text-decoration: none;
     padding: 0.5rem;
-    /* box-shadow: 5px 10px white; */
-    margin-bottom: 1rem;
 }
-/* .contract:hover {
-    color: var(--nic_yellow);
-    cursor: pointer;
-    text-decoration: none;
-}
-.contract h2 {
-    border-bottom: none;
-    color: #fff;
-    font-size: 1.8rem;
-}
-.contract:hover h2 {
-    border-bottom: none;
-    color: var(--nic_yellow);
-} */
 
 .contract p {
     padding-bottom: 0;
@@ -1276,6 +1259,10 @@ a:hover {
 }
 
 .contract_results {
+    margin-bottom: 2rem;
+}
+
+.contract_result {
     color: var(--nic_main);
     /* padding-bottom: 1rem; */
     padding-top: 1rem;
