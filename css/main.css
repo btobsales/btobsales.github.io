@@ -166,6 +166,10 @@ li::before {
     color: var(--nic_blue);
 }
 
+.main-text {
+    color: var(--nic_main);
+}
+
 .content {
     max-width: 800px;
 }
@@ -470,8 +474,7 @@ h1 {
     color: white;
     font-size: 2rem;
     margin-top: 2rem;
-    /* background: #eee; */
-    /* border-bottom: solid .3em var(--nic_main); */
+    font-family: 'Roboto', sans-serif;
     }
 
 h2 {
@@ -480,7 +483,6 @@ h2 {
     font-weight: 900;
     font-size: 2rem;
     margin-top: 1.4em;
-    /* border-bottom: solid .15em var(--nic_main); */
     padding-bottom: 5px;
     text-align: center;
 }
@@ -1027,6 +1029,15 @@ a:hover {
 .additional_resources {
     margin-bottom: 1rem;
 }
+
+.table-footer {
+    margin-top: 2rem;
+}
+.table-footer p {
+    font-size: 0.8rem;
+    color: var(--nic_main);
+}
+
 
 /* SHOW MORE */
 
