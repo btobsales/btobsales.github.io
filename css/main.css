@@ -1033,11 +1033,15 @@ a:hover {
 .table-footer {
     margin-top: 2rem;
     background-color: var(--nic_blue);
-}
-.table-footer p {
     font-size: 0.8rem;
     color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+/* .table-footer p {
+    font-size: 0.8rem;
+    color: white;
+} */
 
 
 /* SHOW MORE */
