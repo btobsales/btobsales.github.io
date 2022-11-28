@@ -1091,24 +1091,21 @@ a:hover {
     color: white;
 }
 
-.rec_table tbody {
+/* .rec_table tbody {
     width: 100%;
-}
+} */
 
 .rec_target {
     font-size: 0.8rem;
+    word-break: break-all 
 }
 
-.col_name {
+/* .col_name {
     word-wrap: break-word;
-}
+} */
 
 .col_socials {
     white-space: nowrap;
-}
-
-.col_country {
-    width: 500px;
 }
 
 .rec_table th {
