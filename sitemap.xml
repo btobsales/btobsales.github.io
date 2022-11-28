@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>https://btobsales.eu/</loc>
-  <lastmod>2022-11-27T22:45:34+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://btobsales.eu/vp-emea-as-a-service/</loc>
-  <lastmod>2022-11-27T22:45:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://btobsales.eu/vp-sales-as-a-service/</loc>
-  <lastmod>2022-11-27T22:45:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://btobsales.eu/sales-as-a-service/</loc>
-  <lastmod>2022-11-27T22:45:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://btobsales.eu/b2b-sales-consulting/</loc>
-  <lastmod>2022-11-27T22:45:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://btobsales.eu/resources/directory-recruiters/</loc>
-  <lastmod>2022-11-27T22:45:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://btobsales.eu/resources/directory-vcs/</loc>
-  <lastmod>2022-11-27T22:45:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-</urlset>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        
+        <url>
+            <loc>https://btobsales.eu</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>1.0</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/b2b-sales-consulting</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/vp-sales-as-a-service</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/resources/directory-recruiters</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/resources/directory-ve-providers</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/resources/directory-webinar-providers</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/resources/directory-vcs</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/vp-emea-as-a-service</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+        <url>
+            <loc>https://btobsales.eu/sales-as-a-service</loc>
+            <lastmod>2022-11-28</lastmod>
+            <priority>0.8</priority>        
+        </url>
+        
+    </urlset>
