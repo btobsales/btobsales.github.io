@@ -181,6 +181,7 @@ li::before {
     padding-left: 0.5rem;
     /* padding-right: 0.5rem; */
     padding: 0.5rem;
+    word-wrap: break-word;
 }
 .container_bg {
     /* background-color: rgba(255, 255, 255, 0.9); */
@@ -1035,8 +1036,9 @@ a:hover {
     background-color: var(--nic_blue);
     font-size: 0.8rem;
     color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
 }
 /* .table-footer p {
     font-size: 0.8rem;
@@ -1073,7 +1075,7 @@ a:hover {
 /* RECRUITERS & VC TABLES */
 
 .rec_table {
-    max-width: 100%;
+    width: 100%;
     /* padding: 3%; */
     margin-bottom: 1rem;
 }
@@ -1082,16 +1084,31 @@ a:hover {
     /* color: white; */
     position: -webkit-sticky;
     position: sticky;
-    
+    width: 100%;
 }
 .rec_table thead th:first-child {
     background-color: white;
     color: white;
 }
 
+.rec_table tbody {
+    width: 100%;
+}
+
+.rec_target {
+    font-size: 0.8rem;
+}
+
+.col_name {
+    word-wrap: break-word;
+}
 
 .col_socials {
     white-space: nowrap;
+}
+
+.col_country {
+    width: 500px;
 }
 
 .rec_table th {
@@ -1102,12 +1119,18 @@ a:hover {
     margin-top: 1rem;
 }
 
-
+/* .rec_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
 
 .rec_table td {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+.rec_tableth, td {
+    border-bottom: 1px solid #ddd;
 }
 
 #myInput {
