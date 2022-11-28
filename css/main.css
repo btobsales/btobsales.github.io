@@ -1032,10 +1032,11 @@ a:hover {
 
 .table-footer {
     margin-top: 2rem;
+    background-color: var(--nic_blue);
 }
 .table-footer p {
     font-size: 0.8rem;
-    color: var(--nic_main);
+    color: white;
 }
 
 

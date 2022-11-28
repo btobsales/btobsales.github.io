@@ -1223,3 +1223,5 @@ FileETag None
 #     RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|a?png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
 
+redirect 301 https://btobsales.eu/recruiters-directory/index.html https://btobsales.eu/resources/directory-recruiters.html
+redirect 301 https://btobsales.eu/vc-directory/index.html https://btobsales.eu/resources/directory-vcs.html
