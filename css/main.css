@@ -7,6 +7,7 @@
     --nic_red: #e84855;
     --nic_yellow: #FFCC00; /* EU yellow */
     --nic_blue: #003399;
+    --nic_grey: #7f99cc;
 }
 
 
@@ -1095,14 +1096,25 @@ a:hover {
     width: 100%;
 } */
 
-.rec_target {
+/* .rec_domain {
     font-size: 0.8rem;
-    word-break: break-all 
+    color: var(--nic_grey)
+} */
+.rec_domain a {
+    color: var(--nic_grey);
+    text-decoration: none;
+    font-size: 0.8rem;
 }
 
-/* .col_name {
-    word-wrap: break-word;
-} */
+.rec_target {
+    font-size: 0.8rem;
+    word-break: break-word;
+}
+
+.rec_team {
+    color: var(--nic_grey);
+    font-size: 0.8rem;
+}
 
 .col_socials {
     white-space: nowrap;
