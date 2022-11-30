@@ -1101,7 +1101,7 @@ a:hover {
     color: var(--nic_grey)
 } */
 .rec_domain a {
-    color: var(--nic_grey);
+    color: var(--nic_yellow);
     text-decoration: none;
     font-size: 0.8rem;
 }
