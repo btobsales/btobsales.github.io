@@ -915,7 +915,7 @@ a:hover {
     /* display: flex;
     align-content: space-between; */
     display: grid;
-    grid-template-columns: 150px 180px;
+    grid-template-columns: 150px 200px;
     /* grid-template-rows: 30px 30px 30px; */
 }
 
