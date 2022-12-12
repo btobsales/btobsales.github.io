@@ -1076,7 +1076,7 @@ a:hover {
 /* RECRUITERS & VC TABLES */
 
 .rec_table {
-    width: 100%;
+    max-width: 100%;
     /* padding: 3%; */
     margin-bottom: 1rem;
 }
@@ -1114,6 +1114,11 @@ a:hover {
 .rec_team {
     color: var(--nic_grey);
     font-size: 0.8rem;
+    word-break: break-word;
+}
+
+.col_name {
+    word-break: break-word;
 }
 
 .col_socials {
@@ -1150,6 +1155,7 @@ a:hover {
 
 
 /* Benefits */
+
 .box_benefits {
     display: grid;
     /* number and size of columns and rows */
